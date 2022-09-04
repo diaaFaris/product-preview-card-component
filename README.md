@@ -43,7 +43,14 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to use images between desktop and mobile. On desktop I make the width of the image as 100% and the height will be automatically adjusted and hiding the mobile image.  While on mobile we hide the desktop image and render the mobile image, the mobile image should be a square in dimensions so we add the width as 100% and the height is going to automatically match the width since their aspect ration is 1:1.
+I have learned how to use the ``` <picture></picture> ``` tag to contain different images for different screens. And I have also learned how to fit the image within its container like fitting a background image in its container using:
+```css
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+} 
+```
 
 ## Author
 
