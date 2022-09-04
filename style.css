@@ -53,20 +53,12 @@ body {
 .card .img {
     width: 50%;
     background-color: black;
-    /* background-image: url("images/image-product-desktop.jpg");
-    background-size: cover; */
 }
 
 .card .img img {
-    width: 100%;
-}
-
-.card .img .desktop-image {
-    height: 100%;
-}
-
-.card .img .mobile-image {
-    display: none;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .card .text {
@@ -125,10 +117,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
     background: var(--dark-cyan);
     color: white;
-    padding: 18px 0;
+    padding: 15px 0;
     border: none;
     font-weight: bold;
     transition: 0.3s;
@@ -160,14 +152,6 @@ body {
 
     .card .img {
         width: 100%;
-    }
-
-    .card .img .desktop-image {
-        display: none;
-    }
-
-    .card .img .mobile-image {
-        display: block;
     }
 
     .card .text {
