@@ -125,10 +125,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
     background: var(--dark-cyan);
     color: white;
-    padding: 15px 0;
+    padding: 18px 0;
     border: none;
     font-weight: bold;
     transition: 0.3s;
