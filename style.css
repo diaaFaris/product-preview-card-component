@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 14px;
+}
+
 body {
     background-color: var(--cream);
     margin: 0;
@@ -63,7 +67,10 @@ body {
 
 .card .text {
     width: 50%;
-    padding: 30px;
+    padding: 2.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card .text .top-span {
@@ -72,25 +79,26 @@ body {
     color: var(--dark-grayish-blue);
     display: block;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .card .text h1 {
-    font-size: 40px;
-    margin-top: 20px;
+    font-size: 2.2rem;
+    margin: 0.3em 0;
     font-family: "Fraunces", serif;
 }
 
 .card .text p {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 1.01rem;
     color: var(--dark-grayish-blue);
     line-height: 1.7;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 1.2em;
 }
 
 .card .text .price {
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -100,27 +108,28 @@ body {
 .card .text .price .new-price {
     font-family: "Fraunces", serif;
     color: var(--dark-cyan);
-    font-size: 40px;
+    font-size: 2.85rem;
     font-weight: bold;
 }
 
 .card .text .price .old-price {
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     color: var(--dark-grayish-blue);
     text-decoration: line-through;
 }
 
 .card .text button {
     font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     background: var(--dark-cyan);
     color: white;
-    padding: 15px 0;
+    padding: 1.2em 0;
     border: none;
     font-weight: bold;
     transition: 0.3s;
@@ -141,7 +150,7 @@ body {
 }
 
 .card .text button img {
-    width: 14px;
+    width: 1.2rem;
 }
 
 @media (max-width: 768px) {
@@ -157,16 +166,11 @@ body {
     .card .text {
         width: 100%;
     }
+}
 
-    .card .text h1 {
-        font-size: 30px;
-        margin-top: 10px;
-    }
-
-    .card .text p,
-    .card .text .price {
-        margin-top: 10px;
-        font-size: 14px;
+@media (min-width: 769px) {
+    html {
+        font-size: 16px;
     }
 }
 
